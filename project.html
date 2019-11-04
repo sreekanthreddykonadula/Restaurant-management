@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css1.css">
+<script>
+var objPeople = [
+{
+	username:"srinivas",
+        password:"123"
+},
+{
+	username:"srikanth",
+        password:"123"
+},
+{
+	username:"saicharan",
+        password:"123"
+},
+{
+	username:"vivek",
+        password:"123"
+}
+]
+function getInfo(){
+var username=document.getElementById("username").value
+var password=document.getElementById("password").value
+var f=0
+for(i=0;i<objPeople.length;i++)
+{
+	if(username==objPeople[i].username && password==objPeople[i].password)
+        {
+       alert(username+"  is logged in");
+       window.location.href="main page.html";
+       return
+      }
+        else
+        {
+	  f=1
+        }     
+}
+if(f==1)
+{
+alert("INVALID USER ID OR PASSWORD");
+
+}
+}</script>
+
+</head>
+
+<body>
+<background:spaghetti.jpg; backgroung-repeat:norepeat; background-size:100%; >
+<div class="loginbox">
+<img src="avatar1.png" class="avatar">
+<form>
+<h1>LOGIN HERE</h1>
+<p>USERNAME</p>
+<input id="username" type="text" name="" placeholder="Enter Username" required>
+<p>PASSWORD</p>
+<input id="password" type="password" name="" placeholder="Enter Password" required>
+</form>
+<input type="submit" onclick="getInfo()" name="" value="login">
+<p>Don't have an account?<a href="register form.html">Signup</a></p>
+</body>
+</html>

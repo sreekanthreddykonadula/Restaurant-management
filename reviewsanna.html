@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>REVIEWS</h2>
+
+<input type="text" placeholder="your review here" id="review">
+<button class="btn"><a href="reviewsanna111.html">submit</a></button>
+
+<div class="container">
+  <img src="avatar3.png" alt="Avatar" style="width:90px">
+  <p><span>Puneeth</span>Student at LPU</p>
+  <p>Your Infrastructure is too good</p>
+</div>
+
+<div class="container">
+  <img src="avatar6.png" alt="Avatar" style="width:90px">
+  <p><span>Sravan</span>Employee at Google</p>
+  <p>Order is arrived fast. I liked it.</p>
+</div>
+<div class="container">
+  <img src="avatar9.png" alt="Avatar" style="width:90px">
+  <p><span>Nikhil</span>Business Man</p>
+  <p>You Keep the restaurant neat and clean.</p>
+</div>
+<div class="container">
+  <img src="avatar2.png" alt="Avatar" style="width:90px">
+  <p><span>Prabhas</span>An Actor</p>
+  <p>Service is too good</p>
+</div>
+</body>
+</html>
